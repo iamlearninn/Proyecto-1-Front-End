@@ -1,0 +1,238 @@
+/*Estilos Globales */
+
+:root{
+    --tituloPagina: "Send Flowers", cursive;
+    --naranja: #bd541c;
+    --blanco: white;
+    --negro: black;
+    --fuenteSecundaria: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%; 
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuenteSecundaria);
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000); 
+
+}
+
+*, :before, *:after{
+    box-sizing: inherit;
+}
+
+/*Estilos navegacion*/
+
+
+@media(max-width: 480px){
+    .navegacion{
+        height: auto;
+        background-color: var(--negro);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+.navegacion{
+    height: auto;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a{
+    margin: 0- 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.navegacion a:hover{
+   cursor: pointer;
+   color: var(--naranja); 
+}
+
+#frontEnd{
+    padding: 1rem;
+    font-family: var(--tituloPagina);
+    color: var(--naranja);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+a{
+   padding: 0.5rem; 
+   font-size: 2rem;  
+}
+
+/* Main */
+
+.fondo{
+    background-image: url(img/programer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.tecnologias p{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.contenedor-imagenes{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10rem 2rem;
+    text-align: center;
+}
+
+.logos .lenguaje{
+    width: 10rem;
+    height: 10rem;
+}
+
+.logos p{
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+/* Formulario de Contacto */
+
+.titulo{
+    margin: 2rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.Contacto{
+    color: var(--blanco);
+    border-top: 1px solid var(--naranja);
+    border-radius: 6px;
+    padding: 5rem 2rem;
+    font-size: 2.5rem;
+}
+
+.Contacto label{
+    display: block;
+    font-weight: bold;
+}
+
+.Contacto div{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Contacto input[type="text"], .Contacto textarea{
+    background: #272727;  
+    background: -webkit-linear-gradient(to right, #434343, #272727); 
+    background: linear-gradient(to right, #434343, #272727); 
+
+    padding: 1rem 1rem;
+    width: 40rem;
+    border: 1px solid #CED5D7;
+    margin: 1rem 0;
+}
+
+.Contacto input[type="text"]:focus, .Contacto textarea:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(173, 173, 173);
+}
+
+.Contacto input[type="submit"]{
+    border: 1px solid #CED5D7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.Contacto input[type="submit"]:hover{
+    cursor: pointer;
+    color: var(--naranja);
+}
+
+/* Footer */
+
+div.copy{
+    margin-bottom: 0;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.copy a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.copy a:hover{
+    color: var(--naranja);
+}
+
+/* Sobre Mi */
+
+.programador{
+    padding-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#parrafo{
+    padding: 5rem;
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+#parrafo span{
+    color: var(--negro);
+    font: bold;
+}
+
+/* Logos de las redes */
+
+.logos-redes{
+    height: 5rem;
+    width: 5rem;
+    margin: 0 auto;
+}
+
+#logos-redes{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns:repeat(3, 1fr) ;
+    margin-bottom: 5rem; 
+    align-items: center;
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--blanco);
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.enlace:hover{
+    color: var(--naranja);
+}
